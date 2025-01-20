@@ -2,15 +2,18 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
+	"math/rand" //for the random number generation
 )
 
 func main() {
-	target := rand.Intn(100) + 1 // Generate a number between 1 and 100
+	target := rand.Intn(100) + 1 // this will generate a number between 1-100
 	var guess int
 
-	fmt.Println("Welcome to the Guess the Number game!")
-	fmt.Println("I'm thinking of a number between 1 and 100. Can you guess it?")
+	fmt.Println("Welcome to the Guess the Number game!!!")
+	fmt.Println("The computer is thinking of a number between 1 and 100. Can you guess it?")
+
+	//The program will then enter a loop where it tells the user if the guess is high or low
+	//Once correclty guessed, the program will end and print a congrats message.
 
 	for {
 		fmt.Print("Enter your guess: ")
