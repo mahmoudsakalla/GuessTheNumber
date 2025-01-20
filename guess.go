@@ -2,8 +2,10 @@ package main
 
 import (
 	"fmt"
-	"math/rand" //for the random number generation
+	"math/rand"
 )
+
+//for the random number generation
 
 func main() {
 	target := rand.Intn(100) + 1 // this will generate a number between 1-100
